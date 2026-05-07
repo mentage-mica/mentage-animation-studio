@@ -1,0 +1,35 @@
+{
+    "name": "mentage-animation-studio",
+    "version": "1.0.0",
+    "description": "Mentage Remotion animation production studio. Branded video system for LinkedIn founder videos, Sam character animations, and carousel content.",
+    "type": "module",
+    "scripts": {
+          "dev": "remotion preview src/index.ts",
+          "build": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1920x1080.mp4",
+          "render": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1920x1080.mp4",
+          "render:sq": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1080x1080.mp4",
+          "render:vt": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1080x1920.mp4",
+          "typecheck": "tsc --noEmit",
+          "lint": "eslint src --ext .ts,.tsx --fix",
+          "format": "prettier --write 'src/**/*.{ts,tsx}'"
+    },
+    "dependencies": {
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "remotion": "^4.0.0"
+    },
+    "devDependencies": {
+          "@remotion/bundler": "^4.0.0",
+          "@remotion/cli": "^4.0.0",
+          "@types/node": "^20.0.0",
+          "@types/react": "^18.2.0",
+          "@types/react-dom": "^18.2.0",
+          "@typescript-eslint/eslint-plugin": "^6.0.0",
+          "@typescript-eslint/parser": "^6.0.0",
+          "eslint": "^8.0.0",
+          "eslint-config-prettier": "^8.0.0",
+          "eslint-plugin-prettier": "^5.0.0",
+          "prettier": "^3.0.0",
+          "typescript": "^5.0.0"
+    }
+}
