@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sourceRepository": "mentage-mica/mentage-content-os",
+  "sourcePath": "/workspace/mentage-content-os",
+  "sourceCommit": "53dabca64df0e2d5f242891e535613a60f1777fd",
+  "animationRepository": "mentage-mica/mentage-animation-studio",
+  "animationCommitAtSync": "1a217ff194326a6b95ba6a0b813319f3ea7fa5a6",
+  "syncDestinations": [
+    ".mentage/content-os/brand",
+    "public/assets/content-os-brand"
+  ],
+  "files": [
+    {
+      "role": "consolidated-brand-source",
+      "source": "00_brand/.gitkeep",
+      "destination": ".mentage/content-os/brand/brand-source-consolidated.md",
+      "sha256": "c625f2cb00281448c5451e0e48aa1496eb1246f82b88b9c89955e5974faa07ac"
+    },
+    {
+      "role": "brand-folder-readme",
+      "source": "00_brand/README.md",
+      "destination": ".mentage/content-os/brand/README.md",
+      "sha256": "7148b1c4115e8952b85da64c70bbcf332f9e76e762dcba6b3c5376a20b95cb2f"
+    },
+    {
+      "role": "sync-policy",
+      "source": "generated",
+      "destination": ".mentage/content-os/brand/SYNC_POLICY.md",
+      "sha256": "c12610a113c5c6fc2d04da281966da1816405721651413207a99380673b0e308"
+    }
+  ]
+}

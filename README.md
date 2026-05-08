@@ -21,7 +21,7 @@ npm run render:founder
 
 ## Project Structure
 
-- `src/index.ts` - Remotion composition registry
+- `src/index.tsx` - Remotion composition registry
 - `src/compositions/` - Video compositions
   - `SamWalkingDemo.tsx` - Sam character walking animation
     - `SamFounderPOV.tsx` - Founder perspective video template

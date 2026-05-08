@@ -4,15 +4,18 @@
     "description": "Mentage Remotion animation production studio. Branded video system for LinkedIn founder videos, Sam character animations, and carousel content.",
     "type": "module",
     "scripts": {
-          "dev": "remotion preview src/index.ts",
-          "build": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1920x1080.mp4",
-          "render": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1920x1080.mp4",
-          "render:sq": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1080x1080.mp4",
-          "render:vt": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1080x1920.mp4",
+          "dev": "remotion preview src/index.tsx",
+          "build": "remotion render src/index.tsx SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1920x1080.mp4",
+          "render": "remotion render src/index.tsx SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1920x1080.mp4",
+          "render:sq": "remotion render src/index.tsx SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1080x1080.mp4",
+          "render:vt": "remotion render src/index.tsx SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1080x1920.mp4",
           "typecheck": "tsc --noEmit",
           "lint": "eslint src --ext .ts,.tsx --fix",
           "format": "prettier --write 'src/**/*.{ts,tsx}'",
-            "export:social": "node scripts/export-social-assets.mjs"
+            "export:social": "node scripts/export-social-assets.mjs",
+            "setup:brand": "node scripts/setup-brand.mjs",
+            "sync:brand": "node scripts/sync-brand.mjs",
+            "verify:brand": "node scripts/verify-brand.mjs"
     },
     "dependencies": {
           "react": "^18.2.0",
