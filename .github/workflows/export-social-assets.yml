@@ -1,0 +1,41 @@
+name: Export social graphics
+
+on:
+  workflow_dispatch:
+    pull_request:
+        paths:
+              - "07_outputs/**/*.svg"
+                    - "scripts/export-social-assets.mjs"
+                          - "package.json"
+                                - "package-lock.json"
+                                      - ".github/workflows/export-social-assets.yml"
+
+                                      jobs:
+                                        export:
+                                            runs-on: ubuntu-latest
+
+                                                steps:
+                                                      - name: Checkout repo
+                                                              uses: actions/checkout@v4
+
+                                                                    - name: Setup Node
+                                                                            uses: actions/setup-node@v4
+                                                                                    with:
+                                                                                              node-version: "20"
+                                                                                                        cache: "npm"
+                                                                                                        
+                                                                                                              - name: Install dependencies
+                                                                                                                      run: npm ci
+                                                                                                                      
+                                                                                                                            - name: Install Playwright Chromium
+                                                                                                                                    run: npx playwright install --with-deps chromium
+                                                                                                                                    
+                                                                                                                                          - name: Export social graphics
+                                                                                                                                                  run: npm run export:social
+                                                                                                                                                  
+                                                                                                                                                        - name: Upload exported graphics
+                                                                                                                                                                uses: actions/upload-artifact@v4
+                                                                                                                                                                        with:
+                                                                                                                                                                                  name: mentage-social-graphics
+                                                                                                                                                                                            path: dist/social
+                                                                                                                                                                                                      if-no-files-found: error
