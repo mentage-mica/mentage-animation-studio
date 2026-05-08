@@ -11,7 +11,7 @@
           "render:vt": "remotion render src/index.ts SamFounderPOV --codec=h264 --crf=18 --output=renders/sam-founder-pov-1080x1920.mp4",
           "typecheck": "tsc --noEmit",
           "lint": "eslint src --ext .ts,.tsx --fix",
-          "format": "prettier --write 'src/**/*.{ts,tsx}'"
+          "format": "prettier --write 'src/**/*.{ts,tsx}'",
             "export:social": "node scripts/export-social-assets.mjs",
     },
     "dependencies": {
