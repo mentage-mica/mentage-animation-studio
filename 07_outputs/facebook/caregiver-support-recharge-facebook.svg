@@ -1,0 +1,57 @@
+<svg viewBox="0 0 1080 1080" width="1080" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft layered background with warm gradient -->
+    <defs>
+        <linearGradient id="warmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#f5e6d3;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#f0d9c8;stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:#e8cbb8;stop-opacity:1" />
+                              </linearGradient>
+                                  <filter id="softTexture">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="4" result="noise" />
+                                              <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+                                                  </filter>
+                                                    </defs>
+
+                                                        <!-- Base background -->
+                                                          <rect width="1080" height="1080" fill="url(#warmGradient)"/>
+
+                                                              <!-- Soft texture overlay -->
+                                                                <rect width="1080" height="1080" fill="#f5e6d3" opacity="0.15" filter="url(#softTexture)"/>
+
+                                                                    <!-- Subtle accent shapes for visual interest -->
+                                                                      <circle cx="950" cy="100" r="120" fill="#d4a574" opacity="0.08"/>
+                                                                        <circle cx="120" cy="920" r="140" fill="#d4a574" opacity="0.08"/>
+                                                                          <rect x="0" y="0" width="1080" height="120" fill="#d4a574" opacity="0.04"/>
+
+                                                                              <!-- Main headline -->
+                                                                                <text x="540" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#5a4a3a" line-height="1.3">
+                                                                                    <tspan x="540" dy="0">Caregivers:</tspan>
+                                                                                        <tspan x="540" dy="70">When was the last time</tspan>
+                                                                                            <tspan x="540" dy="70">someone asked</tspan>
+                                                                                                <tspan x="540" dy="70">how you were doing?</tspan>
+                                                                                                  </text>
+                                                                                                    
+                                                                                                      <!-- Body text -->
+                                                                                                        <text x="540" y="530" font-family="system-ui, -apple-system, sans-serif" font-size="24" text-anchor="middle" fill="#7a6a5a" line-height="1.5" max-width="900">
+                                                                                                            <tspan x="540" dy="0">Supporting an older parent, spouse, or loved one</tspan>
+                                                                                                                <tspan x="540" dy="35">can be rewarding, exhausting, emotional, and</tspan>
+                                                                                                                    <tspan x="540" dy="35">beautiful all at once. Sometimes the constant</tspan>
+                                                                                                                        <tspan x="540" dy="35">appointments, reminders, and worry can leave</tspan>
+                                                                                                                            <tspan x="540" dy="35">little room for your own well-being.</tspan>
+                                                                                                                              </text>
+                                                                                                                                
+                                                                                                                                  <!-- Question prompt -->
+                                                                                                                                    <text x="540" y="760" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#a67c52">
+                                                                                                                                        <tspan x="540" dy="0">What's one small thing that helps</tspan>
+                                                                                                                                            <tspan x="540" dy="40">you recharge, even for a few minutes?</tspan>
+                                                                                                                                              </text>
+                                                                                                                                                
+                                                                                                                                                  <!-- Hashtags -->
+                                                                                                                                                    <text x="540" y="900" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle" fill="#9a7a6a" font-weight="500">
+                                                                                                                                                        <tspan x="540" dy="0">#CaregiverSupport  #HealthyAging  #CognitiveHealth</tspan>
+                                                                                                                                                          </text>
+                                                                                                                                                            
+                                                                                                                                                              <!-- Mentage logo mark (simple, subtle) -->
+                                                                                                                                                                <circle cx="100" cy="1000" r="35" fill="#d4a574" opacity="0.2"/>
+                                                                                                                                                                  <text x="100" y="1008" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#a67c52" opacity="0.4">M</text>
+                                                                                                                                                                  </svg>
