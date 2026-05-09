@@ -8,6 +8,7 @@ This repo is the production asset studio for public-facing Mentage graphics and 
 - Do not merge this repo with `mentage-content-os`; that sibling repo is the private source of truth for internal content and brand source material.
 - Do not delete assets or folders without explicit founder approval.
 - Keep generated files out of git unless the user explicitly asks to commit them.
+- Follow `docs/MENTAGE_BRAND_SYSTEM.md` for public-facing graphics, carousels, social layouts, typography, color, and texture use.
 
 ## Local Setup
 
@@ -21,6 +22,7 @@ This repo is the production asset studio for public-facing Mentage graphics and 
 
 - `07_outputs/` contains source SVG social graphics.
 - `dist/social/` contains generated PNG exports and is ignored by git.
+- `docs/MENTAGE_BRAND_SYSTEM.md` captures the Figma-derived Mentage visual system and production rules.
 - `src/` contains Remotion compositions and theme code.
 - `scripts/` contains export and brand sync utilities.
 - `.mentage/content-os/brand/` contains the intentionally narrow synced brand snapshot.
