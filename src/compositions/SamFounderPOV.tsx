@@ -1,8 +1,8 @@
-import React from 'react';
-import { AbsoluteFill } from 'remotion';
-import { mentageTheme } from '../theme/mentageTheme';
+import React from "react";
+import { AbsoluteFill } from "remotion";
+import { mentageTheme } from "../theme/mentageTheme";
 
-  export const SamFounderPOV: React.FC = () => {
+export const SamFounderPOV: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: mentageTheme.colors.offWhite }}>
       <div style={{ padding: 60, color: mentageTheme.colors.darkCharcoal }}>

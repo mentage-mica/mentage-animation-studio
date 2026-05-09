@@ -29,3 +29,15 @@ yarn-debug.log*
 # Cache
 .eslintcache
 .tsc-cache
+
+# Local Codex workspace toolchains
+.codex/
+
+# Local licensed production asset vault
+public/assets/local-library/**
+!public/assets/local-library/
+!public/assets/local-library/README.md
+!public/assets/local-library/adobe-stock/
+!public/assets/local-library/adobe-stock/README.md
+!public/assets/local-library/figma-element-import-kit/
+!public/assets/local-library/figma-element-import-kit/README.md

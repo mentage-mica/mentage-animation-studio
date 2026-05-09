@@ -1,6 +1,6 @@
-import { Composition } from 'remotion';
-import { SamWalkingDemo } from './compositions/SamWalkingDemo';
-import { SamFounderPOV } from './compositions/SamFounderPOV';
+import { Composition } from "remotion";
+import { SamWalkingDemo } from "./compositions/SamWalkingDemo";
+import { SamFounderPOV } from "./compositions/SamFounderPOV";
 
 export const RemotionRoot = () => {
   return (

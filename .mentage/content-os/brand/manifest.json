@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "sourceRepository": "mentage-mica/mentage-content-os",
-  "sourcePath": "/workspace/mentage-content-os",
+  "sourcePath": "/Users/zachariahfamily/Desktop/mentage-content-os",
   "sourceCommit": "53dabca64df0e2d5f242891e535613a60f1777fd",
   "animationRepository": "mentage-mica/mentage-animation-studio",
-  "animationCommitAtSync": "1a217ff194326a6b95ba6a0b813319f3ea7fa5a6",
+  "animationCommitAtSync": "53474315d8f7ca34a3c0d897d66e5ee97033fb41",
   "syncDestinations": [
     ".mentage/content-os/brand",
     "public/assets/content-os-brand"
